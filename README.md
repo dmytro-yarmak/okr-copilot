@@ -12,6 +12,17 @@ This repository provides tools, personas, and prompts for using AI to enhance yo
 - Human makes all final decisions
 - AI challenges, suggests, and refines - never dictates
 
+## Practice Context
+
+Use our fictional company **Nexora** to practice OKR creation:
+
+[`context/company.md`](context/company.md) — A €24M ARR B2B SaaS company with:
+- Clear vision, mission, and 2026 strategy
+- 3 company-level OKRs
+- 7 teams to practice creating aligned OKRs for
+
+---
+
 ## Quick Start
 
 ### 1. Set Co-pilot Mode
