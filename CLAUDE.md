@@ -22,7 +22,8 @@ Use personas to get different expert perspectives on your OKRs:
 
 ## Skills
 
-- `/okr-review` - Complete OKR review: refinement → quality check → alignment (one question at a time)
+- `/okr-ground-rules` - Define reusable OKR rules and save them to context
+- `/okr-review` - Complete OKR review using saved ground rules in guided or expert-audit mode
 
 ## Key Concepts
 

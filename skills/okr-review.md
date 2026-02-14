@@ -1,6 +1,8 @@
 # OKR Review Skill
 
-A complete OKR review workflow that guides you through refinement, quality check, and alignment - one question at a time.
+A complete OKR review workflow with two modes:
+1) guided question-by-question refinement, and
+2) expert audit of a full draft against OKR best practices.
 
 ## Usage
 
@@ -10,148 +12,262 @@ A complete OKR review workflow that guides you through refinement, quality check
 
 ---
 
+## Operating Rules
+
+1. Start by asking which mode to use: `guided` or `expert-audit`.
+2. In `guided`, ask one question at a time.
+3. In `expert-audit`, ask for a full draft once, then perform most analysis without step-by-step questioning.
+4. Ground every review in:
+   - `context/okr-ground-rules.md`
+   - `context/company.md`
+   - OKR best practices on ground rules, OKR types, and refinement quality.
+5. Refine the human's thinking; do not replace ownership.
+6. Keep language practical and concrete.
+7. Challenge focus when limits are exceeded:
+   - More than 3 active Objectives in a cycle.
+   - Fewer than 2 or more than 4 KRs for one Objective.
+8. Close every review with a final OKR and clear next actions.
+
+---
+
+## Review Modes
+
+### Mode 1: Guided (Question-by-Question)
+
+Use this mode when the team wants coaching and iterative co-creation.
+
+### Mode 2: Expert Audit (Draft Review)
+
+Use this mode when the team wants Codex to review a complete draft quickly and return:
+- a quality scorecard,
+- key issues and risks,
+- a revised OKR proposal,
+- concrete fix actions.
+
+If critical information is missing in expert-audit mode, ask only the minimum clarifying questions needed.
+
+---
+
+## Phase 0: Mode and Ground Rules
+
+### Step 0.0: Select Mode
+Ask: "Which mode do you want for this session: guided (question-by-question) or expert-audit (full draft review)?"
+
+*Wait for response.*
+
+### Step 0.1: Load Saved Rules
+Before asking OKR questions, read `context/okr-ground-rules.md`.
+
+- If the file exists, summarize relevant rules and ask: "Do we use these ground rules for this review?"
+- If the file does not exist, ask: "Ground rules are not set yet. Do we continue with defaults now and run /okr-ground-rules after this review?"
+
+*Wait for response.*
+
+### Step 0.2: Confirm OKR Type
+Ask: "Is this OKR aspirational, committed, or learning?"
+
+*Wait for response. If unclear, help choose before continuing.*
+
+---
+
+## Guided Workflow (Mode 1)
+
+Run all phases below only when mode is `guided`.
+
+---
+
 ## Phase 1: Capture & Context
 
-### Step 1.1: Get the OKR
-Ask: "What's your draft OKR? Share your Objective and Key Results."
+### Step 1.1: Get the Draft
+Ask: "Share your draft Objective and Key Results."
 
 *Wait for response.*
 
-### Step 1.2: Understand Context
-Ask: "What's the context? What problem or opportunity is this OKR addressing?"
+### Step 1.2: Why Now
+Ask: "Why now? What problem or opportunity makes this the priority in this cycle?"
 
 *Wait for response.*
 
-### Step 1.3: Clarify Scope
-Ask: "What's the timeframe, and who owns this OKR (individual, team, company)?"
+### Step 1.3: Clarify Ownership
+Ask: "Who owns this Objective, and who owns each Key Result?"
 
-*Wait for response.*
+*Wait for response. Require explicit owners.*
+
+### Step 1.4: Check Portfolio Load
+Ask: "How many active Objectives does this team have this cycle, and how many KRs are in this Objective?"
+
+*Wait for response. If more than 3 Objectives or KR count is outside 2-4, challenge and ask what should be reduced.*
 
 ---
 
 ## Phase 2: Refine the Objective
 
-### Step 2.1: Check Inspiration
-Ask: "Does this Objective inspire you and your team? If you read it in 3 months, would you feel energized?"
+### Step 2.1: Check Strategic Relevance
+Before asking the question, review `context/company.md` and extract relevant strategy, mission, and priorities.
 
-*Wait for response. If weak, help strengthen before continuing.*
+Ask: "How does this Objective connect to the higher-level strategy, mission, or current top priority?"
 
-### Step 2.2: Check Focus
-Ask: "Is this the ONE most important thing? What are you saying NO to by choosing this?"
+*Wait for response. If the link is weak, ask for a tighter connection or Objective rewrite.*
+
+### Step 2.2: Check Significance and Focus
+Ask: "Is this the most important change now, and what are you explicitly saying no to?"
 
 *Wait for response.*
 
-### Step 2.3: Check Clarity
-Ask: "If I asked 3 different team members what this Objective means, would they give the same answer?"
+### Step 2.3: Check Objective Quality
+Ask: "Is the Objective significant, specific, aspirational, and action-oriented?"
 
-*Wait for response. Suggest refinements if needed.*
+*Wait for response. Rewrite together if weak.*
+
+### Step 2.4: Check Clarity
+Ask: "If three team members read this Objective, would they interpret it the same way?"
+
+*Wait for response.*
 
 ---
 
 ## Phase 3: Refine Key Results
 
-For each Key Result:
+For each Key Result, run all steps below before moving to the next KR.
 
-### Step 3.1: Check Measurability
-Ask: "What's the specific number for [KR]? Where is it today, and where should it be?"
-
-*Wait for response.*
-
-### Step 3.2: Check Outcome vs Output
-Ask: "Is [KR] measuring a result or an activity? What changes in the world when you achieve this?"
-
-*Wait for response. Convert tasks to outcomes if needed.*
-
-### Step 3.3: Check Ambition
-Ask: "On a scale of 1-10, how confident are you in hitting [KR]? (5-7 is ideal for stretch goals)"
+### Step 3.1: Baseline, Target, Time
+Ask: "For [KR], what is the baseline, target, and exact timeframe?"
 
 *Wait for response.*
 
-*Repeat for each Key Result.*
+### Step 3.2: Classify KR Type
+Ask: "Is [KR] input, output, or outcome?"
 
-### Step 3.4: Check Balance
-Ask: "Do you have a mix of leading indicators (predictive) and lagging indicators (results)?"
+*Wait for response. If input, convert to output or outcome. Prefer outcome; allow output when outcome is delayed.*
+
+### Step 3.3: Check Influence
+Ask: "Is [KR] in your circle of control, influence, or concern?"
+
+*Wait for response. Move KRs from concern toward influence where possible.*
+
+### Step 3.4: Check Indicator Type
+Ask: "Is [KR] a leading indicator, lagging indicator, or both when combined with other KRs?"
+
+*Wait for response. Ensure the KR set has an actionable leading/lagging mix.*
+
+### Step 3.5: Check Ambition by OKR Type
+Ask one of these based on OKR type:
+
+- Aspirational: "Confidence for [KR] on a 1-10 scale? Target stretch is usually around 5-7."
+- Committed: "What makes [KR] reliable enough for near-certain delivery?"
+- Learning: "What hypothesis does [KR] test, and what signal will tell us to continue or stop?"
 
 *Wait for response.*
 
 ---
 
-## Phase 4: Quality Check
+## Phase 4: Portfolio Balance and Anti-Patterns
 
-### Step 4.1: Overall Assessment
+### Step 4.1: Check KR Set Balance
+Ask: "Across all KRs, do you have a healthy output/outcome mix and no hidden task list?"
 
-Present a quality scorecard:
+*Wait for response.*
+
+### Step 4.2: Detect Common Anti-Patterns
+Check and ask one question per issue:
+
+1. KR is an initiative disguised as a metric.
+2. KR has no baseline or no source of truth.
+3. KR is outside team influence.
+4. Too many KRs reduce focus.
+5. Objective duplicates another team objective.
+
+---
+
+## Phase 5: Quality Check
+
+### Step 5.1: Present Scorecard
 
 | Criteria | Status | Notes |
 |----------|--------|-------|
-| **Objective** | | |
-| Inspirational | ⬜ | |
-| Qualitative (not a number) | ⬜ | |
-| Time-bound | ⬜ | |
-| Memorable | ⬜ | |
-| **Key Results** | | |
-| Specific & measurable | ⬜ | |
-| Outcome-focused | ⬜ | |
-| Challenging but achievable | ⬜ | |
-| 3-5 KRs (not more) | ⬜ | |
+| **Strategy & Context** | | |
+| Why now is clear | ⬜ | |
+| Alignment to higher priority is explicit | ⬜ | |
+| **Objective Quality** | | |
+| Significant change (not BAU) | ⬜ | |
+| Specific and understandable | ⬜ | |
+| Aspirational and action-oriented | ⬜ | |
+| **Key Result Quality** | | |
+| Baseline and target are explicit | ⬜ | |
+| Measurable and verifiable | ⬜ | |
+| Output/outcome balance is healthy | ⬜ | |
+| Input KRs removed or converted | ⬜ | |
+| **Execution Readiness** | | |
+| Owners are assigned | ⬜ | |
+| Count stays in focus range (<=3 Objectives, 2-4 KRs) | ⬜ | |
+| Dependencies and risks are known | ⬜ | |
+| **Transparency** | | |
+| Tracking location and check-in rhythm are defined | ⬜ | |
 
-### Step 4.2: Address Issues
-For each gap identified, ask ONE question to resolve it before moving on.
-
----
-
-## Phase 5: Alignment Check
-
-### Step 5.1: Connect to Strategy
-Ask: "How does this OKR connect to your company's top priority or your team's mission?"
-
-*Wait for response.*
-
-### Step 5.2: Check Dependencies
-Ask: "Who else needs to succeed for you to hit this OKR? Have you talked to them?"
-
-*Wait for response.*
-
-### Step 5.3: Check for Conflicts
-Ask: "Is anyone else working on goals that might compete with or duplicate this?"
-
-*Wait for response.*
-
-### Step 5.4: Visualize Alignment
-
-```
-Company Priority / Vision
-          ↓
-    [Connection: ___________]
-          ↓
-      Your OKR
-          ↓
-    Key Results → Impact
-```
-
-Ask: "Does this alignment feel strong, medium, or weak? What would strengthen it?"
+### Step 5.2: Resolve Gaps
+For each unchecked item, ask one targeted question and update the OKR before continuing.
 
 ---
 
 ## Phase 6: Final Polish
 
-### Step 6.1: Revised OKR
-Present the refined OKR based on the entire conversation:
+### Step 6.1: Present Revised OKR
+Present:
 
 > **Objective:** [Refined objective]
 >
+> **Type:** [Aspirational/Committed/Learning]
+> **Level:** [Company/Department/Team/Individual]
+> **Timeframe:** [Cycle dates]
+> **Owner:** [Name]
+>
 > **Key Results:**
-> 1. [KR1 with baseline → target]
-> 2. [KR2 with baseline → target]
-> 3. [KR3 with baseline → target]
+> 1. [KR1] - Type: [Output/Outcome], Baseline: X -> Target: Y
+> 2. [KR2] - Type: [Output/Outcome], Baseline: X -> Target: Y
+> 3. [KR3] - Type: [Output/Outcome], Baseline: X -> Target: Y
 
 ### Step 6.2: Confirm
-Ask: "Does this capture what you intended? What would you adjust?"
+Ask: "Does this capture what you intended? What should be adjusted before finalizing?"
 
-*Wait for response. Make final adjustments.*
+*Wait for response. Make final edits.*
 
 ### Step 6.3: Commitment
-Ask: "On a scale of 1-10, how committed are you to this OKR? What would make it a 10?"
+Ask: "On a scale of 1-10, how committed are you to executing this as written, and what would make it a 10?"
+
+---
+
+## Expert-Audit Workflow (Mode 2)
+
+Run this workflow when mode is `expert-audit`.
+
+### Step A1: Intake
+Ask: "Share the full OKR draft (Objective, KRs, owner, timeframe, and any strategic context)."
+
+*Wait for response.*
+
+### Step A2: Analyze Against Best Practices
+Review the draft against:
+
+1. Ground rules in `context/okr-ground-rules.md`.
+2. Company strategy context in `context/company.md`.
+3. OKR best practices:
+   - Objective is significant, specific, aspirational, action-oriented.
+   - Why-now and strategic connection are explicit.
+   - KRs are measurable with baseline/target/time.
+   - Input/output/outcome quality is clear (input avoided).
+   - Leading/lagging mix is practical.
+   - KR influence level is realistic.
+   - Focus limits are respected (<=3 Objectives, 2-4 KRs).
+   - Ownership and tracking cadence are defined.
+
+### Step A3: Return Audit Report
+Provide:
+
+1. Overall rating: `Green`, `Yellow`, or `Red`.
+2. Top issues (ordered by severity) with concrete fixes.
+3. Updated scorecard table with pass/fail notes.
+4. Revised OKR draft ready to use.
+5. Minimal follow-up questions only if blockers remain.
 
 ---
 
@@ -160,32 +276,43 @@ Ask: "On a scale of 1-10, how committed are you to this OKR? What would make it 
 At the end, provide:
 
 ```
-✅ OKR Review Complete
+OKR Review Complete
+Mode: [Guided/Expert-Audit]
 
 Objective: [Final objective]
+Type: [Aspirational/Committed/Learning]
+Level: [Company/Department/Team/Individual]
+Timeframe: [Start -> End]
+Owner: [Name]
 
 Key Results:
-1. [KR1] — Baseline: X → Target: Y
-2. [KR2] — Baseline: X → Target: Y
-3. [KR3] — Baseline: X → Target: Y
+1. [KR1] - [Output/Outcome] - Baseline: X -> Target: Y
+2. [KR2] - [Output/Outcome] - Baseline: X -> Target: Y
+3. [KR3] - [Output/Outcome] - Baseline: X -> Target: Y
 
 Quality: [Green/Yellow/Red]
-Alignment: [Strong/Medium/Weak]
+Strategy fit: [Strong/Medium/Weak]
 Confidence: [X/10]
 Commitment: [X/10]
 
+Check-in rhythm: [Weekly/Biweekly]
+Tracking location: [Tool/Doc]
+
+Dependencies:
+- [Team/Person]
+
 Next steps:
-- [ ] Discuss with [dependent team/person]
-- [ ] Add to OKR tracking system
-- [ ] Schedule weekly check-in
+- [ ] Validate dependencies with stakeholders
+- [ ] Publish OKR in tracking system
+- [ ] Start check-in cadence
 ```
 
 ---
 
-## Key Principles
+## Decision Heuristics
 
-1. **One question at a time** - Never overwhelm
-2. **Wait for answers** - Don't rush through phases
-3. **Build on their thinking** - Refine, don't rewrite
-4. **Respect ownership** - They decide, you advise
-5. **Complete the journey** - Don't skip phases
+1. Use OKRs for meaningful change; keep routine operations in BAU.
+2. Keep levels and structure as simple as possible.
+3. Prefer outcome KRs; use output KRs when they are the best short-cycle proxy.
+4. Do not use input/activity KRs unless explicitly treated as temporary stepping stones.
+5. Match ambition to OKR type, not one universal threshold.

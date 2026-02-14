@@ -47,17 +47,28 @@ Get different perspectives on your OKRs:
 | [CEO](personas/ceo.md) | Strategy & vision | "Does this move us toward our vision?" |
 | [Team Member](personas/team-member.md) | Reality & execution | "Can we actually do this?" |
 
-### 3. Use the OKR Review Skill
+### 3. Set Ground Rules Once
+
+Define organizational OKR rules to reuse in future sessions:
+
+[`/okr-ground-rules`](skills/okr-ground-rules.md) - Helps you define:
+- OKR levels and cycle cadence
+- Focus limits (<=3 Objectives, 2-4 KRs)
+- OKR type expectations (aspirational, committed, learning)
+- KR design, ownership, transparency, and boundaries
+
+Rules are saved in [`context/okr-ground-rules.md`](context/okr-ground-rules.md).
+
+### 4. Use the OKR Review Skill
 
 Complete guided workflow through all phases:
 
 [`/okr-review`](skills/okr-review.md) - Takes you through:
-1. **Capture & Context** - Understand the OKR and its purpose
-2. **Refine Objective** - Make it inspiring and focused
-3. **Refine Key Results** - Ensure measurable outcomes
-4. **Quality Check** - Validate against best practices
-5. **Alignment Check** - Connect to strategy and dependencies
-6. **Final Polish** - Confirm and commit
+1. **Mode Selection** - Choose guided coaching or expert-audit review
+2. **Load Ground Rules** - Reuse saved rules from previous sessions
+3. **Guided Mode** - Question-by-question refinement workflow
+4. **Expert-Audit Mode** - Full draft review against best practices
+5. **Final Output** - Revised OKR with quality score and next actions
 
 ## For Claude Code Users
 
@@ -66,7 +77,8 @@ Copy this repo and use with Claude Code:
 1. Clone the repository
 2. The `CLAUDE.md` file configures personas and skills
 3. Use `@persona-name` to activate a perspective
-4. Use `/okr-review` to run the complete review workflow
+4. Use `/okr-ground-rules` to set reusable rules
+5. Use `/okr-review` to run the complete review workflow
 
 ## MCP Integrations
 
