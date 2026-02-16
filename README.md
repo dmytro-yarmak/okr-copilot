@@ -14,12 +14,20 @@ This repository provides tools, personas, and prompts for using AI to enhance yo
 
 ## Practice Context
 
-Use our fictional company **Nexora** to practice OKR creation:
+Use our fictional company **Nexora** to practice OKR creation. The company context is spread across multiple documents — just like in a real organization:
 
-[`context/company.md`](context/company.md) — A €24M ARR B2B SaaS company with:
-- Clear vision, mission, and 2026 strategy
-- 3 company-level OKRs
-- 7 teams to practice creating aligned OKRs for
+| Document | Description |
+|----------|-------------|
+| [Q4 2025 Board Update](context/nexora-docs/q4-2025-board-update.md) | Financials, ARR, margins, cash position, risks |
+| [Strategy Memo 2026](context/nexora-docs/strategy-memo-2026.md) | CEO's vision, strategic pillars, priorities |
+| [All-Hands Notes — Jan 2026](context/nexora-docs/all-hands-notes-jan-2026.md) | Leadership updates, challenges, Q&A |
+| [Product Roadmap H1 2026](context/nexora-docs/product-roadmap-h1-2026.md) | AI features, enterprise hardening, tech debt |
+| [Competitive Landscape](context/nexora-docs/competitive-landscape-q1-2026.md) | Competitor profiles, win/loss analysis |
+| [Sales Pipeline Report](context/nexora-docs/sales-pipeline-q1-2026.md) | Pipeline by segment, top deals, team metrics |
+| [Customer Success Review](context/nexora-docs/customer-success-review-q4-2025.md) | Churn, NPS, health scores, expansion |
+| [Hiring Plan 2026](context/nexora-docs/hiring-plan-2026.md) | Headcount, critical roles, attrition data |
+
+**Exercise:** Ask Claude to synthesize these documents into a company overview, then use it to create team-level OKRs.
 
 ---
 
