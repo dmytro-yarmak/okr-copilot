@@ -25,6 +25,21 @@ Use personas to get different expert perspectives on your OKRs:
 - `/okr-ground-rules` - Define reusable OKR rules and save them to context
 - `/okr-review` - Complete OKR review using saved ground rules in guided or expert-audit mode
 
+## Company Context
+
+The fictional company **Nexora** is used for practice. Company information is spread across multiple documents in `context/nexora-docs/`:
+
+- `q4-2025-board-update.md` — Financials, ARR, margins, cash position, risks
+- `strategy-memo-2026.md` — CEO's vision, strategic pillars, priorities
+- `all-hands-notes-jan-2026.md` — Leadership updates, challenges, Q&A
+- `product-roadmap-h1-2026.md` — AI features, enterprise hardening, tech debt
+- `competitive-landscape-q1-2026.md` — Competitor profiles, win/loss analysis
+- `sales-pipeline-q1-2026.md` — Pipeline by segment, top deals, team metrics
+- `customer-success-review-q4-2025.md` — Churn, NPS, health scores, expansion
+- `hiring-plan-2026.md` — Headcount, critical roles, attrition data
+
+When asked to create a company overview or OKRs, read these documents to understand Nexora's full context.
+
 ## Key Concepts
 
 When refining OKRs, consider:
@@ -36,6 +51,6 @@ When refining OKRs, consider:
 ## MCP Integrations
 
 This project can connect to:
-- Google Docs (for collaborative OKR documents)
+- Google Drive (for company documents and collaborative OKR docs)
 - Jira (for linking OKRs to execution)
 - Oboard (for OKR management platform)
