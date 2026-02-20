@@ -2,7 +2,7 @@
 
 > AI as your OKR co-pilot, not an autopilot.
 
-This repository provides tools, personas, and prompts for using AI to enhance your OKR (Objectives and Key Results) process while keeping humans in the driver's seat.
+This repository provides tools, personas, and skills for using AI to enhance your OKR (Objectives and Key Results) process while keeping humans in the driver's seat.
 
 ## Philosophy
 
@@ -35,7 +35,7 @@ Use our fictional company **Nexora** to practice OKR creation. The company conte
 
 ### 1. Set Co-pilot Mode
 
-Start any AI session with the [co-pilot mode prompt](prompts/copilot-mode.md):
+Start any AI session with this opening prompt:
 
 ```
 You are my OKR co-pilot. Ask one question at a time.
@@ -110,7 +110,6 @@ This repo is designed to be forked and customized for your organization. Add you
 
 - Personas (industry experts, internal leaders)
 - Skills (your OKR workflow)
-- Prompts (common scenarios)
 - MCP integrations (your tools)
 
 ## License
