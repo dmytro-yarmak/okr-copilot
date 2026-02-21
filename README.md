@@ -59,7 +59,7 @@ Get different perspectives on your OKRs:
 
 Define organizational OKR rules to reuse in future sessions:
 
-[`/okr-ground-rules`](skills/okr-ground-rules.md) - Helps you define:
+[`/okr-ground-rules`](skills/okr-ground-rules.md) or `$okr-ground-rules` - Helps you define:
 - OKR levels and cycle cadence
 - Focus limits (<=3 Objectives, 2-4 KRs)
 - OKR type expectations (aspirational, committed, learning)
@@ -71,12 +71,30 @@ Rules are saved in [`context/okr-ground-rules.md`](context/okr-ground-rules.md).
 
 Complete guided workflow through all phases:
 
-[`/okr-review`](skills/okr-review.md) - Takes you through:
+[`/okr-review`](skills/okr-review.md) or `$okr-review` - Takes you through:
 1. **Mode Selection** - Choose guided coaching or expert-audit review
 2. **Load Ground Rules** - Reuse saved rules from previous sessions
 3. **Guided Mode** - Question-by-question refinement workflow
 4. **Expert-Audit Mode** - Full draft review against best practices
 5. **Final Output** - Revised OKR with quality score and next actions
+
+## For Codex CLI Users
+
+Clone the repo, then install Codex skills from this repository:
+
+```bash
+./scripts/install-codex-skills.sh
+```
+
+What this does:
+
+- Copies skills from `codex-skills/` into `~/.codex/skills/`
+- Installs `okr-review` and `okr-ground-rules` for `$skill-name` invocation
+
+Then restart Codex and use:
+
+- `$okr-ground-rules`
+- `$okr-review`
 
 ## For Claude Code Users
 
