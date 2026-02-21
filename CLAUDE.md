@@ -40,7 +40,9 @@ The fictional company **Nexora** is used for practice. Company information is sp
 - `customer-success-review-q4-2025.md` — Churn, NPS, health scores, expansion
 - `hiring-plan-2026.md` — Headcount, critical roles, attrition data
 
-When asked to create a company overview or OKRs, read these documents to understand Nexora's full context.
+- `company-context-2026-okr.md` — **Synthesized summary** of all docs above, optimized for OKR planning
+
+When asked to create a company overview or OKRs, start with `company-context-2026-okr.md` for a full synthesis, or read individual source documents for deeper detail.
 
 ## Key Concepts
 
