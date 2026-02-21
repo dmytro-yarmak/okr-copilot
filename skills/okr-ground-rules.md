@@ -6,6 +6,7 @@ A workflow to define reusable OKR ground rules once and store them for all futur
 
 ```
 /okr-ground-rules
+$okr-ground-rules
 ```
 
 ---
@@ -22,10 +23,13 @@ A workflow to define reusable OKR ground rules once and store them for all futur
 
 ## Phase 0: Context
 
-### Step 0.1: Read Company Context
+### Step 0.1: Scan Context Folder
+Scan `context/` recursively and summarize any constraints, strategy signals, and operating realities that should shape OKR ground rules.
+
+### Step 0.2: Read Company Context
 Read `context/company.md` before asking questions.
 
-### Step 0.2: Confirm Scope
+### Step 0.3: Confirm Scope
 Ask: "Are these ground rules for one team, multiple teams, or company-wide?"
 
 *Wait for response.*

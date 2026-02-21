@@ -8,6 +8,7 @@ A complete OKR review workflow with two modes:
 
 ```
 /okr-review
+$okr-review
 ```
 
 ---
@@ -17,16 +18,19 @@ A complete OKR review workflow with two modes:
 1. Start by asking which mode to use: `guided` or `expert-audit`.
 2. In `guided`, ask one question at a time.
 3. In `expert-audit`, ask for a full draft once, then perform most analysis without step-by-step questioning.
-4. Ground every review in:
+4. Before asking review questions, scan all files under `context/` (including subfolders) and extract anything useful for OKR quality, strategy alignment, risks, and execution constraints.
+5. Ground every review in:
    - `context/okr-ground-rules.md`
    - `context/company.md`
+   - Other relevant files discovered in `context/`.
    - OKR best practices on ground rules, OKR types, and refinement quality.
-5. Refine the human's thinking; do not replace ownership.
-6. Keep language practical and concrete.
-7. Challenge focus when limits are exceeded:
+6. Refine the human's thinking; do not replace ownership.
+7. Keep language practical and concrete.
+8. Challenge focus when limits are exceeded:
    - More than 3 active Objectives in a cycle.
    - Fewer than 2 or more than 4 KRs for one Objective.
-8. Close every review with a final OKR and clear next actions.
+9. Close every review with a final OKR and clear next actions.
+10. Use scanned context throughout the session; tie major recommendations, rewrites, and risk flags to concrete facts from `context/` documents.
 
 ---
 
@@ -50,20 +54,28 @@ If critical information is missing in expert-audit mode, ask only the minimum cl
 
 ## Phase 0: Mode and Ground Rules
 
-### Step 0.0: Select Mode
+### Step 0.0: Scan Context Folder
+Before asking mode or OKR questions, scan `context/` recursively and summarize relevant facts from any documents that help craft and evaluate OKRs.
+Keep a short working context brief and use it throughout all later phases.
+
+### Step 0.1: Select Mode
 Ask: "Which mode do you want for this session: guided (question-by-question) or expert-audit (full draft review)?"
 
 *Wait for response.*
 
-### Step 0.1: Load Saved Rules
+### Step 0.2: Load Saved Rules
 Before asking OKR questions, read `context/okr-ground-rules.md`.
 
-- If the file exists, summarize relevant rules and ask: "Do we use these ground rules for this review?"
-- If the file does not exist, ask: "Ground rules are not set yet. Do we continue with defaults now and run /okr-ground-rules after this review?"
+- Treat ground rules as configured only if the file is filled with concrete values (not template placeholders). At minimum verify these are explicit: scope, levels, cycle length, check-in rhythm, ownership model, and source of truth.
+- If the file contains unresolved template markers (for example: `[...]`, `[Team/Company-wide]`, `[Name]`, `TBD`, `TODO`) or missing core fields, treat it as not configured.
+- If ground rules are configured, summarize relevant rules and ask: "Do we use these ground rules for this review?"
+- If the file is missing or not configured, ask: "Ground rules are not fully set yet. Do you want to run /okr-ground-rules first so we lock your rules before this review?"
+- If they answer yes, stop review flow, run `/okr-ground-rules`, then resume `/okr-review`.
+- Continue with defaults only if the human explicitly chooses to proceed without ground rules.
 
 *Wait for response.*
 
-### Step 0.2: Confirm OKR Type
+### Step 0.3: Confirm OKR Type
 Ask: "Is this OKR aspirational, committed, or learning?"
 
 *Wait for response. If unclear, help choose before continuing.*
@@ -250,7 +262,8 @@ Review the draft against:
 
 1. Ground rules in `context/okr-ground-rules.md`.
 2. Company strategy context in `context/company.md`.
-3. OKR best practices:
+3. Other relevant `context/` documents (for example product roadmap, sales, customer success, hiring, risks, and financial constraints).
+4. OKR best practices:
    - Objective is significant, specific, aspirational, action-oriented.
    - Why-now and strategic connection are explicit.
    - KRs are measurable with baseline/target/time.
@@ -305,6 +318,10 @@ Next steps:
 - [ ] Validate dependencies with stakeholders
 - [ ] Publish OKR in tracking system
 - [ ] Start check-in cadence
+
+Context signals used:
+- [Document] - [How it informed this OKR/review]
+- [Document] - [How it informed this OKR/review]
 ```
 
 ---
