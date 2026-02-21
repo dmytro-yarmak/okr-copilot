@@ -86,6 +86,12 @@ Clone the repo, then install Codex skills from this repository:
 ./scripts/install-codex-skills.sh
 ```
 
+Or use the Make target:
+
+```bash
+make install-codex-skills
+```
+
 What this does:
 
 - Copies skills from `codex-skills/` into `~/.codex/skills/`
