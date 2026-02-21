@@ -67,16 +67,17 @@ Define organizational OKR rules to reuse in future sessions:
 
 Rules are saved in [`context/okr-ground-rules.md`](context/okr-ground-rules.md).
 
-### 4. Use the OKR Review Skill
+### 4. Draft, Review, and Audit
 
-Complete guided workflow through all phases:
+Use separate skills for drafting vs refinement vs strict audit:
 
-[`/okr-review`](skills/okr-review.md) or `$okr-review` - Takes you through:
-1. **Mode Selection** - Choose guided coaching or expert-audit review
-2. **Load Ground Rules** - Reuse saved rules from previous sessions
-3. **Guided Mode** - Question-by-question refinement workflow
-4. **Expert-Audit Mode** - Full draft review against best practices
-5. **Final Output** - Revised OKR with quality score and next actions
+- [`/okr-write`](skills/okr-write.md) or `$okr-write` - Guided draft creation from scratch (one question at a time)
+- [`/okr-review`](skills/okr-review.md) or `$okr-review` - Guided refinement of an existing draft (one question at a time)
+- [`/okr-audit`](skills/okr-audit.md) or `$okr-audit` - Mostly autonomous expert scorecard and risk audit
+
+Backward compatibility:
+- If `/okr-review` or `$okr-review` is used for strict audit, it routes to `okr-audit`.
+- If review starts without a draft, it asks for paste/link or routes to `okr-write`.
 
 ## For Codex CLI Users
 
@@ -95,12 +96,14 @@ make install-codex-skills
 What this does:
 
 - Copies skills from `codex-skills/` into `~/.codex/skills/`
-- Installs `okr-review` and `okr-ground-rules` for `$skill-name` invocation
+- Installs `okr-ground-rules`, `okr-write`, `okr-review`, and `okr-audit` for `$skill-name` invocation
 
 Then restart Codex and use:
 
 - `$okr-ground-rules`
+- `$okr-write`
 - `$okr-review`
+- `$okr-audit`
 
 ## For Claude Code Users
 
@@ -110,7 +113,9 @@ Copy this repo and use with Claude Code:
 2. The `CLAUDE.md` file configures personas and skills
 3. Use `@persona-name` to activate a perspective
 4. Use `/okr-ground-rules` to set reusable rules
-5. Use `/okr-review` to run the complete review workflow
+5. Use `/okr-write` to draft new OKRs
+6. Use `/okr-review` to refine draft OKRs
+7. Use `/okr-audit` for strict scorecard audit
 
 ## MCP Integrations
 

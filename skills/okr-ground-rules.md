@@ -29,7 +29,13 @@ Scan `context/` recursively and summarize any constraints, strategy signals, and
 ### Step 0.2: Read Company Context
 Read `context/company.md` before asking questions.
 
-### Step 0.3: Confirm Scope
+### Step 0.3: Read Existing Ground Rules
+Read `context/okr-ground-rules.md` before asking setup questions.
+
+- If rules are already configured, summarize them and ask: "Do we refine these rules or rewrite from scratch?"
+- If file is placeholder-only or incomplete, treat as not configured and continue setup.
+
+### Step 0.4: Confirm Scope
 Ask: "Are these ground rules for one team, multiple teams, or company-wide?"
 
 *Wait for response.*
