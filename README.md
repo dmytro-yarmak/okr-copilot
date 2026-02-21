@@ -63,7 +63,7 @@ Define organizational OKR rules to reuse in future sessions:
 - OKR levels and cycle cadence
 - Focus limits (<=3 Objectives, 2-4 KRs)
 - OKR type expectations (aspirational, committed, learning)
-- KR design, ownership, transparency, and boundaries
+- KR design, ownership, alignment, transparency, and incentives
 
 Rules are saved in [`context/okr-ground-rules.md`](context/okr-ground-rules.md).
 
