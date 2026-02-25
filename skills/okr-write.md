@@ -18,7 +18,7 @@ $okr-write
 3. Before drafting, scan all files under `context/` (including subfolders) and extract strategic signals, risks, constraints, and opportunities.
 4. Ground drafting in:
    - `context/okr-ground-rules.md`
-   - `context/company.md`
+   - Strategy context files discovered in `context/` (for example: strategy memos, board updates, roadmap notes, market/customer reports)
    - Other relevant files discovered in `context/`.
 5. Validate that ground rules are configured, not only present.
 6. Keep the draft practical and concrete.
@@ -26,6 +26,8 @@ $okr-write
    - Max 3 active Objectives in a cycle.
    - 2-4 KRs per Objective.
 8. Close with a complete draft and next step options (`/okr-review` or `/okr-audit`).
+9. Keep support concise and decision-oriented: provide only the most useful options and short rationale.
+10. Treat examples as scaffolding, not forced outputs; the human can adapt or write custom text.
 
 ---
 
@@ -55,24 +57,27 @@ Ask one question at a time to confirm:
 ## Phase 1: Draft the Objective
 
 ### Step 1.1: Priority and Why-Now
-Ask: "What is the most important change this team must drive in this cycle, and why now?"
+Using the context brief, extract 3-5 top strategic priorities for this cycle.
+
+- Present a numbered list of priority options with one-line urgency rationale per option.
+- Always include a `Custom priority` option.
+- Ask: "What is the most important change this team must drive in this cycle, and why now? Choose one option (or `Custom priority`) and include your why-now."
+
+If the context brief is too weak to extract priorities, ask:
+"I do not have enough strategy context to rank priorities yet. Share your top 3 priorities for this cycle and why now for each."
 
 *Wait for response.*
 
-### Step 1.2: Strategy Link
-Using the context brief, ask: "How does this connect to current strategy and top priorities?"
+### Step 1.2: Objective Draft Support
+Before asking for the final Objective sentence:
+- Provide one concise objective template tailored to selected OKR type and level.
+- Provide 2 strong example Objectives aligned to selected priority.
+- Provide 1 anti-example and briefly explain why it is weak.
+- Keep all examples concise.
 
-*Wait for response.*
+Then ask: "Which option should we use for your Objective: Example A, Example B, or a custom draft?"
 
-### Step 1.3: Focus Check
-Ask: "How many active Objectives does this team already have this cycle?"
-
-*Wait for response. If above 3, challenge and ask what should be deprioritized.*
-
-### Step 1.4: Objective Draft
-Ask: "Draft one Objective sentence that is significant, specific, aspirational, and action-oriented."
-
-*Wait for response and refine if needed.*
+*Wait for response, then refine if needed and check objective quality (significant, specific, aspirational, action-oriented).*
 
 ---
 
@@ -81,7 +86,14 @@ Ask: "Draft one Objective sentence that is significant, specific, aspirational, 
 For each KR, run all checks before moving to the next KR.
 
 ### Step 2.1: Draft KR Statement
-Ask: "What is your first Key Result for this Objective?"
+Apply this support pattern at the start of **every** KR (KR1, KR2, KR3, KR4 if needed):
+
+- Provide 3-5 candidate KR metric patterns aligned to the selected priority and current Objective.
+- Provide 2 strong KR examples and 1 anti-example.
+- Add a short note for each strong example on why it is measurable and useful.
+- Keep options concise and decision-oriented.
+
+Then ask: "For this KR, which pattern or example do you want to adapt, or what is your custom KR draft?"
 
 *Wait for response.*
 
@@ -91,9 +103,9 @@ Ask: "For this KR, what is the baseline, target, and exact timeframe?"
 *Wait for response.*
 
 ### Step 2.3: KR Type Quality
-Ask: "Is this KR input, output, or outcome?"
+Assess the KR type yourself: input, output, or outcome.
 
-*Wait for response. Convert input KRs toward output/outcome where possible.*
+*If KR is input or output, propose a rewrite to make it outcome-based where possible.*
 
 ### Step 2.4: Influence and Indicator
 Ask: "Is this KR in your control/influence/concern, and is it a leading or lagging indicator?"

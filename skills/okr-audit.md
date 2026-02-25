@@ -18,7 +18,7 @@ $okr-audit
 3. Before auditing, scan all files under `context/` (including subfolders) and extract relevant strategy, constraints, risks, and signals.
 4. Ground audit in:
    - `context/okr-ground-rules.md`
-   - `context/company.md`
+   - `context/nexora-docs/company-context-2026-okr.md`
    - Other relevant files discovered in `context/`.
 5. Validate ground rules as configured before relying on them.
 6. Keep findings concrete and ordered by severity.
