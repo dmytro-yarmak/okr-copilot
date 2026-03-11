@@ -24,6 +24,7 @@ Use personas to get different expert perspectives on your OKRs:
 
 - `/okr-ground-rules` - Define reusable OKR rules and save them to context
 - `/okr-write` - Draft a new OKR from scratch in guided mode
+- `/okr-outcome-kr` - Convert input/output KRs into outcome KRs using company context and KPI grounding
 - `/okr-review` - Refine an existing OKR draft in guided mode
 - `/okr-audit` - Run a mostly autonomous expert scorecard audit
 

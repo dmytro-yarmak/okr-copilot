@@ -67,11 +67,12 @@ Define organizational OKR rules to reuse in future sessions:
 
 Rules are saved in [`context/okr-ground-rules.md`](context/okr-ground-rules.md).
 
-### 4. Draft, Review, and Audit
+### 4. Draft, Rewrite, Review, and Audit
 
-Use separate skills for drafting vs refinement vs strict audit:
+Use separate skills for drafting vs KR rewriting vs refinement vs strict audit:
 
 - [`/okr-write`](skills/okr-write.md) or `$okr-write` - Guided draft creation from scratch (one question at a time)
+- [`/okr-outcome-kr`](skills/okr-outcome-kr.md) or `$okr-outcome-kr` - Convert input/output KRs into stronger outcome KRs with KPI grounding
 - [`/okr-review`](skills/okr-review.md) or `$okr-review` - Guided refinement of an existing draft (one question at a time)
 - [`/okr-audit`](skills/okr-audit.md) or `$okr-audit` - Mostly autonomous expert scorecard and risk audit
 
@@ -96,12 +97,13 @@ make install-codex-skills
 What this does:
 
 - Copies skills from `codex-skills/` into `~/.codex/skills/`
-- Installs `okr-ground-rules`, `okr-write`, `okr-review`, and `okr-audit` for `$skill-name` invocation
+- Installs `okr-ground-rules`, `okr-write`, `okr-outcome-kr`, `okr-review`, and `okr-audit` for `$skill-name` invocation
 
 Then restart Codex and use:
 
 - `$okr-ground-rules`
 - `$okr-write`
+- `$okr-outcome-kr`
 - `$okr-review`
 - `$okr-audit`
 
@@ -114,8 +116,9 @@ Copy this repo and use with Claude Code:
 3. Use `@persona-name` to activate a perspective
 4. Use `/okr-ground-rules` to set reusable rules
 5. Use `/okr-write` to draft new OKRs
-6. Use `/okr-review` to refine draft OKRs
-7. Use `/okr-audit` for strict scorecard audit
+6. Use `/okr-outcome-kr` to convert weak KRs into outcome KRs
+7. Use `/okr-review` to refine draft OKRs
+8. Use `/okr-audit` for strict scorecard audit
 
 ## MCP Integrations
 
