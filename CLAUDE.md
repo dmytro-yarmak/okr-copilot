@@ -27,6 +27,7 @@ Use personas to get different expert perspectives on your OKRs:
 - `/okr-outcome-kr` - Convert input/output KRs into outcome KRs using company context and KPI grounding
 - `/okr-review` - Refine an existing OKR draft in guided mode
 - `/okr-audit` - Run a mostly autonomous expert scorecard audit
+- `/okr-align` - Run a mostly autonomous alignment and coverage analysis across OKR sets
 
 ## Company Context
 
